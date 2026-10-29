@@ -1,0 +1,36 @@
+[submodule "codebase/graphify"]
+	path = codebase/graphify
+	url = https://github.com/Graphify-Labs/graphify.git
+	shallow = true
+[submodule "security/skillspector"]
+	path = security/skillspector
+	url = https://github.com/NVIDIA/SkillSpector.git
+	shallow = true
+[submodule "security/security-audit-skill"]
+	path = security/security-audit-skill
+	url = https://github.com/cloudflare/security-audit-skill.git
+	shallow = true
+[submodule "design/hallmark"]
+	path = design/hallmark
+	url = https://github.com/Nutlope/hallmark.git
+	shallow = true
+[submodule "workflow/superpowers"]
+	path = workflow/superpowers
+	url = https://github.com/obra/superpowers.git
+	shallow = true
+[submodule "workflow/andrej-karpathy-skills"]
+	path = workflow/andrej-karpathy-skills
+	url = https://github.com/multica-ai/andrej-karpathy-skills.git
+	shallow = true
+[submodule "design/impeccable"]
+	path = design/impeccable
+	url = https://github.com/pbakaus/impeccable.git
+	shallow = true
+[submodule "design/taste-skill"]
+	path = design/taste-skill
+	url = https://github.com/Leonxlnx/taste-skill.git
+	shallow = true
+[submodule "seo/claude-seo"]
+	path = seo/claude-seo
+	url = https://github.com/AgriciDaniel/claude-seo.git
+	shallow = true
