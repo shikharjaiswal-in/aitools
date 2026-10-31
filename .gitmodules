@@ -34,3 +34,7 @@
 	path = seo/claude-seo
 	url = https://github.com/AgriciDaniel/claude-seo.git
 	shallow = true
+[submodule "memory/claude-mem"]
+	path = memory/claude-mem
+	url = https://github.com/thedotmack/claude-mem.git
+	shallow = true
