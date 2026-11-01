@@ -38,3 +38,7 @@
 	path = memory/claude-mem
 	url = https://github.com/thedotmack/claude-mem.git
 	shallow = true
+[submodule "workflow/mattpocock-skills"]
+	path = workflow/mattpocock-skills
+	url = https://github.com/mattpocock/skills.git
+	shallow = true
