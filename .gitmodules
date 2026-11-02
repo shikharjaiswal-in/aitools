@@ -42,3 +42,7 @@
 	path = workflow/mattpocock-skills
 	url = https://github.com/mattpocock/skills.git
 	shallow = true
+[submodule "security/aisoc"]
+	path = security/aisoc
+	url = https://github.com/beenuar/AiSOC.git
+	shallow = true
