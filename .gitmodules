@@ -46,3 +46,7 @@
 	path = security/aisoc
 	url = https://github.com/beenuar/AiSOC.git
 	shallow = true
+[submodule "automation/agent-desktop"]
+	path = automation/agent-desktop
+	url = https://github.com/vercel-labs/agent-desktop.git
+	shallow = true
