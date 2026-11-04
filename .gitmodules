@@ -50,3 +50,7 @@
 	path = automation/agent-desktop
 	url = https://github.com/vercel-labs/agent-desktop.git
 	shallow = true
+[submodule "testing/floci"]
+	path = testing/floci
+	url = https://github.com/floci-io/floci.git
+	shallow = true
