@@ -54,3 +54,7 @@
 	path = testing/floci
 	url = https://github.com/floci-io/floci.git
 	shallow = true
+[submodule "workflow/worktrunk"]
+	path = workflow/worktrunk
+	url = https://github.com/max-sixty/worktrunk.git
+	shallow = true
