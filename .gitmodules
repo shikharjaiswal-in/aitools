@@ -58,3 +58,7 @@
 	path = workflow/worktrunk
 	url = https://github.com/max-sixty/worktrunk.git
 	shallow = true
+[submodule "data/auto-ontology"]
+	path = data/auto-ontology
+	url = https://github.com/NVIDIA/auto-ontology.git
+	shallow = true
