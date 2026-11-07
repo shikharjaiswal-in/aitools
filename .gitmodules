@@ -62,3 +62,7 @@
 	path = data/auto-ontology
 	url = https://github.com/NVIDIA/auto-ontology.git
 	shallow = true
+[submodule "workflow/gstack"]
+	path = workflow/gstack
+	url = https://github.com/garrytan/gstack.git
+	shallow = true
