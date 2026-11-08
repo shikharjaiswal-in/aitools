@@ -66,3 +66,7 @@
 	path = workflow/gstack
 	url = https://github.com/garrytan/gstack.git
 	shallow = true
+[submodule "cloud/google-skills"]
+	path = cloud/google-skills
+	url = https://github.com/google/skills.git
+	shallow = true
