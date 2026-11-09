@@ -70,3 +70,7 @@
 	path = cloud/google-skills
 	url = https://github.com/google/skills.git
 	shallow = true
+[submodule "memory/billion-context"]
+	path = memory/billion-context
+	url = https://github.com/ranxianglei/billion-context.git
+	shallow = true
