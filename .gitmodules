@@ -74,3 +74,7 @@
 	path = memory/billion-context
 	url = https://github.com/ranxianglei/billion-context.git
 	shallow = true
+[submodule "smarthome/ha-mcp"]
+	path = smarthome/ha-mcp
+	url = https://github.com/homeassistant-ai/ha-mcp.git
+	shallow = true
