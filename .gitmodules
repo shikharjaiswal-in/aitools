@@ -78,3 +78,7 @@
 	path = smarthome/ha-mcp
 	url = https://github.com/homeassistant-ai/ha-mcp.git
 	shallow = true
+[submodule "workflow/improve"]
+	path = workflow/improve
+	url = https://github.com/shadcn/improve.git
+	shallow = true
