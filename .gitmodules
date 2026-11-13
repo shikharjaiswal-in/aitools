@@ -82,3 +82,11 @@
 	path = workflow/improve
 	url = https://github.com/shadcn/improve.git
 	shallow = true
+[submodule "career/career-ops"]
+	path = career/career-ops
+	url = https://github.com/career-ops-hq/career-ops.git
+	shallow = true
+[submodule "career/reactive-resume"]
+	path = career/reactive-resume
+	url = https://github.com/reactive-resume/reactive-resume.git
+	shallow = true
