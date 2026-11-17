@@ -94,3 +94,7 @@
 	path = workflow/plannotator
 	url = https://github.com/backnotprop/plannotator.git
 	shallow = true
+[submodule "data/sure"]
+	path = data/sure
+	url = https://github.com/we-promise/sure.git
+	shallow = true
