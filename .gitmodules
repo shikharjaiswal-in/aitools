@@ -102,3 +102,7 @@
 	path = workflow/last30days
 	url = https://github.com/mvanhorn/last30days-skill.git
 	shallow = true
+[submodule "automation/ai-youtube-shorts-generator"]
+	path = automation/ai-youtube-shorts-generator
+	url = https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator.git
+	shallow = true
