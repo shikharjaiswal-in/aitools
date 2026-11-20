@@ -106,3 +106,7 @@
 	path = automation/ai-youtube-shorts-generator
 	url = https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator.git
 	shallow = true
+[submodule "security/claude-bughunter"]
+	path = security/claude-bughunter
+	url = https://github.com/elementalsouls/Claude-BugHunter.git
+	shallow = true

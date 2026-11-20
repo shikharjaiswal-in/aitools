@@ -11,28 +11,28 @@ Help your agent see how the whole repo connects before it changes anything.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**Graphify**](https://github.com/Graphify-Labs/graphify)<br><sub>by Graphify Labs</sub> | Turns your codebase, SQL schemas, configs and docs into one knowledge graph your agent can query, so it sees what a change touches before it makes it. | Apache-2.0 | 150k | `uv tool install graphifyy && graphify install` |
+| [**Graphify**](https://github.com/Graphify-Labs/graphify)<br><sub>by Graphify Labs</sub> | Turns your codebase, SQL schemas, configs and docs into one knowledge graph your agent can query, so it sees what a change touches before it makes it. | Apache-2.0 | 151k | `uv tool install graphifyy && graphify install` |
 
 ### Agent workflow
 Make the agent plan, test and change only what it should.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**last30days**](https://github.com/mvanhorn/last30days-skill)<br><sub>by mvanhorn</sub> | A skill that researches any person, company or topic across Reddit, X, YouTube, Hacker News, Polymarket and the web from the last 30 days and writes one brief ranked by real engagement. Reads a company's careers page too. | MIT | 70.2k | `/plugin marketplace add mvanhorn/last30days-skill   (then /plugin install last30days in Claude Code)`<br>`/last30days <company or topic>` |
-| [**Plannotator**](https://github.com/backnotprop/plannotator)<br><sub>by backnotprop</sub> | Your coding agent's plans open in the browser: highlight, cross out and comment on steps, then send it all back in one click so the agent rewrites the plan before it touches code. Also reviews diffs and PRs. Runs locally. | Apache-2.0 | 13.5k | `curl -fsSL https://plannotator.ai/install.sh \| bash`<br>`/plugin marketplace add backnotprop/plannotator   (then /plugin install plannotator@plannotator in Claude Code)` |
+| [**last30days**](https://github.com/mvanhorn/last30days-skill)<br><sub>by mvanhorn</sub> | A skill that researches any person, company or topic across Reddit, X, YouTube, Hacker News, Polymarket and the web from the last 30 days and writes one brief ranked by real engagement. Reads a company's careers page too. | MIT | 70.9k | `/plugin marketplace add mvanhorn/last30days-skill   (then /plugin install last30days in Claude Code)`<br>`/last30days <company or topic>` |
+| [**Plannotator**](https://github.com/backnotprop/plannotator)<br><sub>by backnotprop</sub> | Your coding agent's plans open in the browser: highlight, cross out and comment on steps, then send it all back in one click so the agent rewrites the plan before it touches code. Also reviews diffs and PRs. Runs locally. | Apache-2.0 | 13.7k | `curl -fsSL https://plannotator.ai/install.sh \| bash`<br>`/plugin marketplace add backnotprop/plannotator   (then /plugin install plannotator@plannotator in Claude Code)` |
 | [**improve**](https://github.com/shadcn/improve)<br><sub>by shadcn</sub> | An Agent Skill: your most capable model audits the repo and writes self-contained plans, cheaper models execute them in an isolated worktree, and the big model reviews the diff. It never edits your code itself. | MIT | 12.1k | `npx skills add shadcn/improve`<br>`/improve   (then /improve execute 001 to hand a plan to a cheaper model)` |
 | [**gstack**](https://github.com/garrytan/gstack) | Garry Tan's Claude Code setup: slash-command roles from CEO to QA. /review finds bugs that pass CI but fail in production, /qa tests in a real browser, /office-hours asks six forcing questions. | MIT | 142k | `git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup` |
 | [**Worktrunk**](https://github.com/max-sixty/worktrunk) | Git worktree CLI for parallel AI agents: each agent gets its own folder and branch (`wt switch -x claude -c <branch>`), and `wt merge` squashes, rebases, merges and cleans up. | Apache-2.0 | 12.6k | `brew install worktrunk && wt config shell install`<br>`winget install max-sixty.worktrunk` |
 | [**mattpocock/skills**](https://github.com/mattpocock/skills) | Skills for real engineers. Includes grill-me: the agent interviews you about the plan, one round of recommended answers at a time, until nothing is left to guess. | MIT | 328k | `claude plugin install mattpocock-skills@claude-plugins-official`<br>`npx skills@latest add mattpocock/skills` |
-| [**Superpowers**](https://github.com/obra/superpowers)<br><sub>by Jesse Vincent</sub> | A library of skills that makes the agent brainstorm, write a plan, work test-first in a git worktree and review itself before it calls a branch done. | MIT | 321k | `/plugin install superpowers@claude-plugins-official` |
-| [**Karpathy-inspired CLAUDE.md**](https://github.com/multica-ai/andrej-karpathy-skills) | One CLAUDE.md built from Andrej Karpathy's notes on LLM coding mistakes: think before coding, keep it simple, make surgical changes, loop until tests pass. | see repo | 234k | `curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md` |
+| [**Superpowers**](https://github.com/obra/superpowers)<br><sub>by Jesse Vincent</sub> | A library of skills that makes the agent brainstorm, write a plan, work test-first in a git worktree and review itself before it calls a branch done. | MIT | 322k | `/plugin install superpowers@claude-plugins-official` |
+| [**Karpathy-inspired CLAUDE.md**](https://github.com/multica-ai/andrej-karpathy-skills) | One CLAUDE.md built from Andrej Karpathy's notes on LLM coding mistakes: think before coding, keep it simple, make surgical changes, loop until tests pass. | see repo | 235k | `curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md` |
 
 ### Agent memory
 Let your agent remember past sessions instead of starting from zero.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**billion-context**](https://github.com/ranxianglei/billion-context) | Context compression for long agent sessions. Runs locally in front of the model API; the model folds old turns into detailed summaries and unfolds them when it needs the exact words. | see repo | 7.9k | `npm install -g billion-context`<br>`bili claude` |
+| [**billion-context**](https://github.com/ranxianglei/billion-context) | Context compression for long agent sessions. Runs locally in front of the model API; the model folds old turns into detailed summaries and unfolds them when it needs the exact words. | see repo | 8k | `npm install -g billion-context`<br>`bili claude` |
 | [**claude-mem**](https://github.com/thedotmack/claude-mem)<br><sub>by Alex Newman</sub> | Captures what your coding agent does, compresses each session into notes and injects the relevant ones next time. Stored in SQLite on your machine; note-writing uses a model (your plan, your key, or their hosted option). | Apache-2.0 | 118k | `npx claude-mem install` |
 
 ### Computer use
@@ -41,39 +41,40 @@ Let your agent operate apps and desktops that have no API.
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
 | [**AI YouTube Shorts Generator**](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator)<br><sub>by Anil-matcha (SamurAIGPT)</sub> | Open-source Opus Clip alternative: transcribes a long video or stream, scores every moment for hooks and emotional peaks with an LLM, and cuts the best into 9:16 shorts. No watermark, no per-clip credits. | MIT | 6.3k | `pip install -r requirements.txt && pip install -r requirements-local.txt`<br>`python main.py "stream.mp4" --mode local --num-clips 5   (OpenAI or Gemini key in .env)` |
-| [**agent-desktop**](https://github.com/vercel-labs/agent-desktop) | Computer use for AI agents: reads desktop apps through the OS accessibility tree, so every button and field gets a ref to act on. Snapshot, act, snapshot again; runs in the background. macOS, Windows, Linux. | Apache-2.0 | 25.4k | `npm install -g agent-desktop` |
+| [**agent-desktop**](https://github.com/vercel-labs/agent-desktop) | Computer use for AI agents: reads desktop apps through the OS accessibility tree, so every button and field gets a ref to act on. Snapshot, act, snapshot again; runs in the background. macOS, Windows, Linux. | Apache-2.0 | 25.6k | `npm install -g agent-desktop` |
 
 ### Data and SQL
 Give your agent the meaning of your data before it writes a query.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**Sure**](https://github.com/we-promise/sure)<br><sub>by we-promise (community fork of Maybe Finance)</sub> | A full personal finance app you self-host for free: import bank statement CSVs, rules sort every transaction into categories, budgets show where the money went. Your data stays on your machine. | AGPL-3.0 | 16.5k | `curl -fsSL -o compose.yml https://raw.githubusercontent.com/we-promise/sure/main/compose.example.yml`<br>`docker compose up -d   (after setting SECRET_KEY_BASE and POSTGRES_PASSWORD in .env; then open localhost:3000)` |
-| [**Auto-Ontology**](https://github.com/NVIDIA/auto-ontology) | Builds a map of what your database means (terms, reviewed SQL, safe joins) so agents look things up before writing SQL and say when the data can't answer. MCP server, 10 database engines, any OpenAI-compatible model. | Apache-2.0 | 13.8k | `git clone https://github.com/NVIDIA/auto-ontology.git && cd auto-ontology && docker compose up -d --build` |
+| [**Sure**](https://github.com/we-promise/sure)<br><sub>by we-promise (community fork of Maybe Finance)</sub> | A full personal finance app you self-host for free: import bank statement CSVs, rules sort every transaction into categories, budgets show where the money went. Your data stays on your machine. | AGPL-3.0 | 16.7k | `curl -fsSL -o compose.yml https://raw.githubusercontent.com/we-promise/sure/main/compose.example.yml`<br>`docker compose up -d   (after setting SECRET_KEY_BASE and POSTGRES_PASSWORD in .env; then open localhost:3000)` |
+| [**Auto-Ontology**](https://github.com/NVIDIA/auto-ontology) | Builds a map of what your database means (terms, reviewed SQL, safe joins) so agents look things up before writing SQL and say when the data can't answer. MCP server, 10 database engines, any OpenAI-compatible model. | Apache-2.0 | 14k | `git clone https://github.com/NVIDIA/auto-ontology.git && cd auto-ontology && docker compose up -d --build` |
 
 ### Cloud
 Current, official instructions for the cloud platforms your agent builds on.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**Google Agent Skills**](https://github.com/google/skills) | Google's official agent skills for Gemini API, Cloud Run, BigQuery, Firebase, GKE and 150+ more products. Pick the ones you need with npx skills, or install as Claude Code / Codex plugins. | Apache-2.0 | 24.4k | `npx skills add google/skills` |
+| [**Google Agent Skills**](https://github.com/google/skills) | Google's official agent skills for Gemini API, Cloud Run, BigQuery, Firebase, GKE and 150+ more products. Pick the ones you need with npx skills, or install as Claude Code / Codex plugins. | Apache-2.0 | 24.5k | `npx skills add google/skills` |
 
 ### Security
 Audit your code and the skills you install.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**AiSOC**](https://github.com/beenuar/AiSOC) | Self-hosted AI security operations center: groups related alerts into incidents, an agent investigates each one, every step goes into a ledger, and responses wait for approval. Runs a small local model with no API keys. | MIT | 8.3k | `git clone https://github.com/beenuar/AiSOC && cd AiSOC && make up` |
-| [**SkillSpector**](https://github.com/NVIDIA/SkillSpector)<br><sub>by NVIDIA</sub> | Scans an agent skill for hidden instructions, key stealing and shady dependencies before you install it. 0-100 risk score. | Apache-2.0 | 26.8k | `uv tool install git+https://github.com/NVIDIA/skillspector.git` |
-| [**Security Audit skill**](https://github.com/cloudflare/security-audit-skill)<br><sub>by Cloudflare</sub> | Runs a staged security audit of your codebase with any coding agent and writes verified findings. | MIT | 75.4k | `npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit` |
+| [**Claude BugHunter**](https://github.com/elementalsouls/Claude-BugHunter)<br><sub>by elementalsouls (Sachin Sharma)</sub> | Skill bundle that turns Claude Code into a bug-bounty researcher: 83 skills and 15 commands built from 681 disclosed reports across 24 bug classes. Use on apps you own or are authorized to test. | MIT | 12.8k | `/plugin marketplace add elementalsouls/Claude-BugHunter`<br>`/plugin install claude-bughunter@elementalsouls` |
+| [**AiSOC**](https://github.com/beenuar/AiSOC) | Self-hosted AI security operations center: groups related alerts into incidents, an agent investigates each one, every step goes into a ledger, and responses wait for approval. Runs a small local model with no API keys. | MIT | 7k | `git clone https://github.com/beenuar/AiSOC && cd AiSOC && make up` |
+| [**SkillSpector**](https://github.com/NVIDIA/SkillSpector)<br><sub>by NVIDIA</sub> | Scans an agent skill for hidden instructions, key stealing and shady dependencies before you install it. 0-100 risk score. | Apache-2.0 | 27k | `uv tool install git+https://github.com/NVIDIA/skillspector.git` |
+| [**Security Audit skill**](https://github.com/cloudflare/security-audit-skill)<br><sub>by Cloudflare</sub> | Runs a staged security audit of your codebase with any coding agent and writes verified findings. | MIT | 75.9k | `npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit` |
 
 ### Design
 Stop shipping pages that look AI-generated.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**Impeccable**](https://github.com/pbakaus/impeccable)<br><sub>by Paul Bakaus</sub> | A design vocabulary for your agent: steer UI with commands like bolder, quieter and polish, then critique and audit it to catch AI slop before it ships. | Apache-2.0 | 113k | `npx impeccable install`<br>`/impeccable init` |
-| [**Hallmark**](https://github.com/Nutlope/hallmark)<br><sub>by Together AI</sub> | A design skill for Claude Code, Codex, Cursor and OpenCode that audits a page for the AI tells, then redesigns it. | MIT | 57.6k | `npx skills add nutlope/hallmark -g` |
+| [**Impeccable**](https://github.com/pbakaus/impeccable)<br><sub>by Paul Bakaus</sub> | A design vocabulary for your agent: steer UI with commands like bolder, quieter and polish, then critique and audit it to catch AI slop before it ships. | Apache-2.0 | 114k | `npx impeccable install`<br>`/impeccable init` |
+| [**Hallmark**](https://github.com/Nutlope/hallmark)<br><sub>by Together AI</sub> | A design skill for Claude Code, Codex, Cursor and OpenCode that audits a page for the AI tells, then redesigns it. | MIT | 58.1k | `npx skills add nutlope/hallmark -g` |
 | [**Taste Skill**](https://github.com/Leonxlnx/taste-skill)<br><sub>by Leon Lin</sub> | Gives the agent an art direction, real photos from open collections and a browser check, so new pages and app screens don't come out generic. | MIT | 119k | `/plugin marketplace add Leonxlnx/taste-skill`<br>`/plugin install taste-skill@taste-skill` |
 
 ### Testing
@@ -81,7 +82,7 @@ Keep agents honest about tests and CI.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**Floci**](https://github.com/floci-io/floci) | Free local AWS emulator: point your SDK, CLI or Terraform at localhost:4566 and 100+ services (S3, DynamoDB, Lambda, SQS...) answer on your machine. No account, no auth token. | MIT | 31.9k | `floci start`<br>`docker run -d -p 4566:4566 floci/floci:latest` |
+| [**Floci**](https://github.com/floci-io/floci) | Free local AWS emulator: point your SDK, CLI or Terraform at localhost:4566 and 100+ services (S3, DynamoDB, Lambda, SQS...) answer on your machine. No account, no auth token. | MIT | 32k | `floci start`<br>`docker run -d -p 4566:4566 floci/floci:latest` |
 | [**CI test-count guard**](testing/ci-test-count-guard/)<br><sub>recipe in this repo</sub> | Rules for AGENTS.md plus a CI step that fails when the test count drops, so an agent can't delete failing tests to go green. | MIT |  | [setup](testing/ci-test-count-guard/README.md) |
 
 ### SEO
@@ -89,7 +90,7 @@ Audit how search engines and AI search see your site.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**Claude SEO**](https://github.com/AgriciDaniel/claude-seo)<br><sub>by Agrici Daniel</sub> | An SEO audit toolkit for Claude Code: technical SEO, content quality, structured data and AI-search readiness. Optional extensions need your own third-party accounts. | MIT | 30.7k | `/plugin marketplace add AgriciDaniel/claude-seo`<br>`/plugin install claude-seo@agricidaniel-claude-seo`<br>`/seo setup` |
+| [**Claude SEO**](https://github.com/AgriciDaniel/claude-seo)<br><sub>by Agrici Daniel</sub> | An SEO audit toolkit for Claude Code: technical SEO, content quality, structured data and AI-search readiness. Optional extensions need your own third-party accounts. | MIT | 31k | `/plugin marketplace add AgriciDaniel/claude-seo`<br>`/plugin install claude-seo@agricidaniel-claude-seo`<br>`/seo setup` |
 
 ### Smart home
 Let your agent read and change your home automations.
@@ -103,10 +104,10 @@ Fix your CV and apply to fewer, better-fit jobs.
 
 | Tool | What it does | Licence | Stars | Install |
 |---|---|---|---|---|
-| [**career-ops**](https://github.com/career-ops-hq/career-ops)<br><sub>by santifer (career-ops-hq)</sub> | An open-source job search agent in your AI CLI: scans company job boards, scores each job against your CV and tells you to skip weak fits, tailors your CV and cover letter. You press Submit. | MIT | 83.6k | `npx @santifer/career-ops init`<br>`cd career-ops && claude   (then /career-ops scan)` |
+| [**career-ops**](https://github.com/career-ops-hq/career-ops)<br><sub>by santifer (career-ops-hq)</sub> | An open-source job search agent in your AI CLI: scans company job boards, scores each job against your CV and tells you to skip weak fits, tailors your CV and cover letter. You press Submit. | MIT | 83.8k | `npx @santifer/career-ops init`<br>`cd career-ops && claude   (then /career-ops scan)` |
 | [**Reactive Resume**](https://github.com/reactive-resume/reactive-resume)<br><sub>by reactive-resume</sub> | A free, open-source, privacy-first resume builder: import your old CV or LinkedIn export, check it, export PDF, Word, Markdown or JSON. | MIT | 45.9k | `rxresu.me (free account) or self-host with Docker`<br>`Import → check → Export as Markdown for career-ops` |
 
-<sub>28 tools · numbers from the GitHub API, synced 2026-11-19. Each linked folder is a git submodule pinned to the last checked commit.</sub>
+<sub>29 tools · numbers from the GitHub API, synced 2026-11-20. Each linked folder is a git submodule pinned to the last checked commit.</sub>
 <!-- tools:end -->
 
 ## Get the code
