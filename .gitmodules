@@ -110,3 +110,7 @@
 	path = security/claude-bughunter
 	url = https://github.com/elementalsouls/Claude-BugHunter.git
 	shallow = true
+[submodule "testing/app-store-compliance"]
+	path = testing/app-store-compliance
+	url = https://github.com/mjmirza/app-store-compliance.git
+	shallow = true
