@@ -114,3 +114,7 @@
 	path = testing/app-store-compliance
 	url = https://github.com/mjmirza/app-store-compliance.git
 	shallow = true
+[submodule "testing/opensre"]
+	path = testing/opensre
+	url = https://github.com/Tracer-Cloud/opensre.git
+	shallow = true
