@@ -118,3 +118,7 @@
 	path = testing/opensre
 	url = https://github.com/Tracer-Cloud/opensre.git
 	shallow = true
+[submodule "automation/cli-anything"]
+	path = automation/cli-anything
+	url = https://github.com/HKUDS/CLI-Anything.git
+	shallow = true
