@@ -122,3 +122,7 @@
 	path = automation/cli-anything
 	url = https://github.com/HKUDS/CLI-Anything.git
 	shallow = true
+[submodule "data/claude-trading-skills"]
+	path = data/claude-trading-skills
+	url = https://github.com/tradermonty/claude-trading-skills.git
+	shallow = true
