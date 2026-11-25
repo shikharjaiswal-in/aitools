@@ -126,3 +126,7 @@
 	path = data/claude-trading-skills
 	url = https://github.com/tradermonty/claude-trading-skills.git
 	shallow = true
+[submodule "security/open-code-review"]
+	path = security/open-code-review
+	url = https://github.com/alibaba/open-code-review.git
+	shallow = true
