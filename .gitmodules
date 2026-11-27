@@ -134,3 +134,7 @@
 	path = security/opensandbox
 	url = https://github.com/opensandbox-group/OpenSandbox.git
 	shallow = true
+[submodule "automation/nod"]
+	path = automation/nod
+	url = https://github.com/n8n-io/nod.git
+	shallow = true
